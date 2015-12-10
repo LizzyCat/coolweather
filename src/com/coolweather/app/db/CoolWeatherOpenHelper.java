@@ -11,7 +11,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 	 * id:自增长编号
 	 * name:省|市|县名称
 	 * code:省|市|县代号
-	 * level:级别（1：代表省级，2代表市级，3代表县级）
+	 * level:级别（0：代表省级，1代表市级，2代表县级）
 	 */
 	public static final String CRETAE_AREAINFO = "create table AreaInfo ("
 			+"id integer primary key autoincrement,"

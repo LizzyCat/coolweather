@@ -78,7 +78,7 @@ public class CoolWeatherDB {
 	 */
 	public List<AreaInfo> loadProvinces(){
 		List<AreaInfo> list =new ArrayList<AreaInfo>();
-		Cursor cursor=db.query("AreaInfo", null, "level=1", null, null, null, null);
+		Cursor cursor=db.query("AreaInfo", null, "level=0", null, null, null, null);
 		if(cursor.moveToFirst()){
 			do{
 				AreaInfo areaInfo=new AreaInfo();
